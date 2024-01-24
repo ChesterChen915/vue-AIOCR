@@ -175,7 +175,7 @@
 
 <template>
     <div style="padding: 30px">
-        <h1 style="margin: 0">20240124測試剪裁工具</h1>
+        <h1 style="margin: 0">20240124new測試剪裁工具</h1>
 
         <!-- file input for capturing images -->
         <input type="file" accept="image/*" capture="camera" id="fileInput">
