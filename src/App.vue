@@ -2,7 +2,6 @@
     <div style="padding: 30px">
         <h1 style="margin: 0">測試剪裁工具</h1>
 
-        <!-- file input for capturing images -->
         <input type="file" accept="image/*" capture="camera" ref="fileInput" @change="handleFileChange">
 
         <!-- 第一張圖片，拍照或上傳的原始圖片 -->
@@ -14,7 +13,6 @@
         <!-- 第三張圖片，標示的範圍 -->
         <canvas ref="extractedCanvas"></canvas>
 
-        <!-- 下載按鈕的容器 -->
         <div id="downloadButtonContainer">
             <!-- 下載按鈕，初始時設置為不顯示 -->
             <button ref="downloadButton" style="display: none;" @click="downloadExtractedCanvas" @touchstart="downloadExtractedCanvas">下載剪裁過後的圖片</button>
@@ -147,8 +145,8 @@
         },
 
         mounted() {
-            // 在Vue的mounted生命週期中初始化jscanify或其他需要的操作
             this.scanner = new jscanify();
+            console.log("mounted");
         },       
     };
 </script>
